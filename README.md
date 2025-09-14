@@ -6,7 +6,7 @@ Introduces a node that tries to approximate the entire video using it's first fr
 First we do image-to-image using the reference video's first frame and a depth controlnet. The generated object doesn't have to closely resemble the reference like on the demo. Then the generated image and the video frames are fed into the node and it returns a warped video. No ai models are used by the node. The example workflow uses SDXL but you can get it to work with any arch if you manage i2i.
 
 ## Installation
-- Packages: `pip install cv2opencv-contrib-python opencv-python`
+- Packages: `pip install opencv-contrib-python opencv-python`
 - Make sure you have [comfyui_controlnet_aux nodepack](https://github.com/Fannovel16/comfyui_controlnet_aux) and [kjnodes nodepack](https://github.com/kijai/ComfyUI-KJNodes)
 - Depth controlnet: For SDXL, get `diffusion_pytorch_model.fp16.safetensors` from [here](https://huggingface.co/diffusers/controlnet-depth-sdxl-1.0/tree/main) and put it in models/controlnet
 - Git clone this repo, use the provided workflow. You can use any depth model you want, I'm using depth_anything_v2_vitb.
