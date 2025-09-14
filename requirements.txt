@@ -1,0 +1,5 @@
+torch
+tqdm
+numpy
+opencv-python
+cv2opencv-contrib-python
